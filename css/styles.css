@@ -1,5 +1,26 @@
-ul, ol{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, 
+ol{
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .link {
@@ -16,7 +37,41 @@ body{
     background-color: #FFFFFF;
 }
 
+
 /* HEADER */
+
+.page-header {
+    padding-top:24px;
+    padding-bottom:24px;
+}
+
+.container { 
+    width: 1158px;
+    margin: 0 auto;
+    padding left: 16px;
+    padding right: 16px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    padding-right: 332px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+   }
 
 .logotype {  
     font-family:'Raleway', sans-serif;
@@ -26,23 +81,30 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--IRIS, #4D5AE5);
+    margin-right: 76px;
 }
 
 .logotype-span {
     color: var(--NAVY-BLUE, #2E2F42);
 }
-/* Body Medium */
+
 .menu-link {    
-   font-size: 16px;
-   font-weight: 500;
-   line-height: 1.5; /* 150% */
-   letter-spacing: 0.02em;
-   color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE, #2E2F42);
+ }
+
+/* Body Medium */
+
+.menu-contacts {
+    display: flex;
+    gap: 40px;
 }
 
-/* Body */
 .menu-list {
-    font-style: normal;
+    font-style: normal;   
 }
 
 .menu-link-contacts {    
@@ -51,6 +113,10 @@ body{
    line-height: 1.5; /* 150% */
    letter-spacing: 0.02em;
    color: var(--SLATE, #434455);
+   gap: 40px;
+    margin-left: auto;
+    padding-left:;
+    justify-content: flex-end;
 }
 
 .menu-link-contacts:hover,
@@ -60,9 +126,15 @@ body{
     color: var(--OCEAN, #404BBF);
 }
 
+
 /*  HERO SECTION*/
+
 .hero-images {
     background-color: #2E2F42;
+    height: 600px;
+    flex-shrink: 0;
+    padding-top: 36px;
+    padding-bottom: 60px;
 }
 
 .hero-images-title {  
@@ -72,16 +144,29 @@ body{
     line-height: 1.07; 
     letter-spacing: 0.02em; 
     color: var(--WHITE, #FFFFFF);
+    width: 496px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 188px;
+    padding-bottom: 292px;
  }
    
-.hero-images-title-button {
+.hero-images-button {
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.04em;
     color: var(--WHITE, #FFFFFF);
-    background-color: #4D5AE5
+    background-color: #4D5AE5;
+    width: 105px;
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
     .hero-images-title-button:hover,
@@ -89,6 +174,20 @@ body{
         background-color: #404BBF;
     }
     /* Header 3 */
+
+    .menu-business {
+        display: flex;
+    }
+
+    .business-rules-list {
+        display: flex;
+        width: 264px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex-grow: 1;
+        display: flex;
+    }
 
     .business-rules-main {    
        font-size: 20px;
@@ -106,6 +205,11 @@ body{
     }
     
     /* Header 2 */
+
+    .experts-list {
+        display: flex;
+        gap: 24px;
+    }
    
     .experts-name  {
         background-color: var(--CLOUD, #F4F4FD);
@@ -119,10 +223,20 @@ body{
       letter-spacing: 0.02em;
       text-transform: capitalize;
       color: var(--NAVY-BLUE, #2E2F42);
+      padding-top: 120px; 
+      padding-bottom: 72px; 
     }
 
     .experts-list-tab {
         background-color: #FFFFFF;
+        width: 240px;
+        height: 260px;
+        display: inline-flex;
+        padding-bottom: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
     }
 
     .experts-img-name {   
@@ -143,6 +257,10 @@ body{
     }
 
     /* portfolio */
+
+    .portfolio-list {
+        flex-wrap: wrap; 
+    }
 
     .portfolio-title {
        text-align: center;
