@@ -77,13 +77,13 @@ body{
 
 .main-nav {
     display: flex;
-    align-items: center;
-    padding-right: 332px; 
+    align-items: center; 
 }
 
 .menu {
     display: flex;
     gap: 40px;
+   
    }
 
 .logotype {  
@@ -353,4 +353,5 @@ body{
        line-height: 1.5; /* 150% */
        letter-spacing: 0.02em;
        color: var(--CLOUD, #F4F4FD);
+       width: 264px;
     }
